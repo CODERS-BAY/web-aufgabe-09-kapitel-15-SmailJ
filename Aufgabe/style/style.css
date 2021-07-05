@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    width: 100vw;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-size: 200px;
+    font-family: Kaushan;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/* NAV-BAR */
+nav {
+    display: flex;
+    width: 100vw;
+    height: 6vh;
+    background-color: #add8e6;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+nav a {
+    font-family: Anton;
+    font-size: 35px;
+    margin: 0 1%;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline overline;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Container */
+.container {
+    width: 100vw;
+    height: 54vh;
+    display: grid; 
+    grid-template-rows: 0 1fr 100px; 
+    grid-template-columns: 25% 25% 25% 25%; 
+}
+article { 
+    background-image: url(../img/strand.jpg);
+    background-size: cover;
+    grid-column-start:1; 
+    grid-column-end:4; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+}
+h2 {
+    font-size: 70px;
+    font-family: Lobster;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+article p {
+    font-size: 45px;
+    color: white;
+    margin: 0 30px;
+}
+aside { 
+    background:lightcyan; 
+    grid-column-start:4; 
+    grid-column-end:5; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+} 
+aside p {
+    font-size: 35px;
+    color: black;
+    margin: 0 30px;
+}
+footer { 
+    background:lightblue; 
+    grid-column-start:1; 
+    grid-column-end:5; 
+    grid-row-start:3; 
+    grid-row-end:4; 
+    text-align: center;
+}
+footer p {
+    font-family: Anton;
+    font-size: 25px;
+}
+
+.article2 { 
+    background-image: url(../img/strand2.jpg);
+    background-size: cover;
+    grid-column-start:1; 
+    grid-column-end:3; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+}
+.article3 { 
+    background-image: url(../img/strand3.jpg);
+    background-size: cover;
+    grid-column-start:3; 
+    grid-column-end:4; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+}
+.article4 { 
+    background-image: url(../img/strand4.jpg);
+    background-size: cover;
+    grid-column-start:2; 
+    grid-column-end:3; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+}
+.article5 { 
+    background-image: url(../img/strand5.jpeg);
+    background-size: cover;
+    grid-column-start:3; 
+    grid-column-end:5; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+}
+
+.aside2 { 
+    background:lightcyan; 
+    grid-column-start:1; 
+    grid-column-end:2; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+    text-align: center;
+    border: 3px solid black;
+} 
+.aside2 p {
+    font-size: 35px;
+    color: black;
+    margin: 0 30px;
+}
+
+/* Keyframes */
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+    }
+}
+
+/* FONTS */
+@font-face {
+    font-family: Kaushan;
+    src: url(KaushanScript-Regular.ttf);
+}
+@font-face {
+    font-family: Anton;
+    src: url(Anton-Regular.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster-Regular.ttf);
+}
